@@ -1,0 +1,11 @@
+title: lucianodacunha.net
+email: lcno.dc@gmail.com
+description: "Python, Desenvolvimento Web e tudo mais"
+baseurl: ""
+url: "http://lucianodacunha.net"
+twitter_username: jekyllrb
+github_username:  jekyll
+markdown: kramdown
+permalink: /:title
+plugins:
+  - jekyll-feed

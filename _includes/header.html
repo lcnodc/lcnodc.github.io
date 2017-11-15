@@ -1,0 +1,16 @@
+<section class="page-header">
+  <h1 class="project-name">
+    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+  </h1>
+  <h2 class="project-tagline">{{ site.description }}</h2>
+
+  <h3 class="project-menu">
+  {% for page in site.pages %}
+    {% if page.title == "Sobre" or page.title == "Contato" %}
+    <a href="{{ page.url | prepend: site.baseurl }}">
+      {{ page.title }}
+    </a>
+    {% endif %}
+  {% endfor %}
+  </h3>
+</section>

@@ -1,0 +1,39 @@
+---
+layout: default
+comments: true
+---
+{% include minutes-to-read.html %}
+
+<article class="main-content content post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-date">
+    <time>{{ page.date | date_to_string }}</time>
+    <span class="reading-time"> - {{ minutesText }}</span>    
+  </div>
+
+  {{ content }}
+
+<div id="disqus_thread"></div>
+
+<script>
+    var disqus_config = function () {
+        var disqus_shortname = 'blog-rkdv8ywelu'
+    };
+
+    (function() {
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+
+        dsq.src = '//' + 'blog-rkdv8ywelu' + '.disqus.com/embed.js';
+
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+    })();
+
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>  
+
+</article>
